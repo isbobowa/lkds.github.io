@@ -1105,37 +1105,35 @@ pre .javascript .function {
   color: #222 !important;
 }
 .back-to-top {
-  box-sizing: border-box;
-  position: fixed;
-  bottom: -100px;
-  right: 30px;
-  z-index: 1050;
-  padding: 0 6px;
-  width: 24px;
+  visibility: hidden;
+  margin: 8px -10px -20px;
   background: #222;
   font-size: 12px;
   opacity: 1;
-  color: #fff;
   cursor: pointer;
   text-align: center;
   -webkit-transform: translateZ(0);
-  transition-property: bottom;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
+}
+.back-to-top:hover {
+  opacity: 0.8;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .back-to-top {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .back-to-top.back-to-top-on {
-  bottom: 19px;
+  visibility: visible;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 .header {
   background: transparent;
@@ -1854,16 +1852,6 @@ pre .javascript .function {
 .sidebar .exturl:hover {
   color: #eee;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .sidebar {
-    display: none !important;
-  }
-}
-@media (max-width: 767px) {
-  .sidebar {
-    display: none !important;
-  }
-}
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
@@ -1906,12 +1894,14 @@ pre .javascript .function {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 @media (max-width: 767px) {
   .sidebar-toggle {
-    display: none !important;
+    right: 20px;
+    opacity: 0.8;
   }
 }
 .sidebar-toggle-line {
@@ -2017,7 +2007,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7f0a73;
+  background: #ac2a08;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2136,6 +2126,32 @@ pre .javascript .function {
 }
 .post-toc .nav .active-current > a:hover {
   color: #87daff;
+}
+.sidebar-active #sidebar-dimmer {
+  opacity: 0.7;
+  -webkit-transform: translateX(-150%);
+  -webkit-transform: translateX(-150%);
+  -moz-transform: translateX(-150%);
+  -ms-transform: translateX(-150%);
+  -o-transform: translateX(-150%);
+  transform: translateX(-150%);
+  transition: opacity 0.2s;
+}
+#sidebar-dimmer {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0s 0.2s;
+}
+@media (max-width: 767px) {
+  #sidebar-dimmer {
+    display: block;
+  }
 }
 .footer {
   font-size: 14px;
