@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.fnzs.tk/"/>
-  <updated>2019-05-29T12:50:04.552Z</updated>
+  <updated>2019-05-29T12:51:38.457Z</updated>
   <id>http://blog.fnzs.tk/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>prepre.md</title>
+    <title>prepre</title>
     <link href="http://blog.fnzs.tk/2019/05/29/prepre/"/>
     <id>http://blog.fnzs.tk/2019/05/29/prepre/</id>
     <published>2019-05-29T12:49:01.000Z</published>
-    <updated>2019-05-29T12:50:04.552Z</updated>
+    <updated>2019-05-29T12:51:38.457Z</updated>
     
     <content type="html"><![CDATA[<p>#初阶 level 1<br>1.注册一个<a href="https://github.com" target="_blank" rel="noopener">GitHub</a>账号<br>2.follow我<a href="https://github.com/lkds" target="_blank" rel="noopener">Link</a><br>3.fork 我的任意一个repo<br>4.clone 我的任意一个repo到本地<br>5.创建一个repo</p>]]></content>
     
